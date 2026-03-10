@@ -4,6 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = "rileymo97/product-service"
         IMAGE_TAG = "${BUILD_NUMBER}"
+	PATH = "/opt/homebrew/bin:${PATH}"
     }
 
     stages {
